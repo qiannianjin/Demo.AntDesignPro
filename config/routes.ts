@@ -1,4 +1,4 @@
-export  default [
+export default [
   {
     path: '/user',
     component: '../layouts/UserLayout',
@@ -23,13 +23,24 @@ export  default [
             path: '/',
             redirect: '/welcome',
           },
-
+          {
+            path: '/Person',
+            name: 'person',
+            icon: 'UserOutlined',
+            component: './Person',
+          }, {
+            path: '/todo',
+            name: 'todo',
+            icon: 'UnorderedListOutlined',
+            component: './Todo',
+          },
           {
             path: '/new',
             name: 'new',
             icon: 'AreaChartOutlined',
             component: './New',
-          },{
+          },
+          {
             path: '/welcome',
             name: 'welcome',
             icon: 'smile',
@@ -58,6 +69,18 @@ export  default [
             component: './ListTableList',
           },
           {
+            name: 'accountcenter',
+            icon: 'smile',
+            path: '/accountcenter',
+            component: './AccountCenter',
+          },
+          {
+            name: 'accountsettings',
+            icon: 'smile',
+            path: '/accountsettings',
+            component: './AccountSettings',
+          },
+          {
             component: './404',
           },
         ],
@@ -70,4 +93,4 @@ export  default [
   {
     component: './404',
   },
-]
+];
